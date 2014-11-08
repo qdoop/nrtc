@@ -5,9 +5,10 @@ v8.log
 npm-debug.log
 
 build
-openssl
+
 
 out
+
 
 
 # Logs

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\deps">
+      <UniqueIdentifier>{D8C1C9B5-38B1-FC5D-54EB-0CB99232FA56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\deps\cyassl">
+      <UniqueIdentifier>{9AD721E4-3EED-F8D9-6F24-265BA2C66F5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\deps\cyassl\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\deps\cyassl\ctaocrypt">
+      <UniqueIdentifier>{F61C97C7-42C4-F6BA-1A88-6010E0878B04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\deps\cyassl\ctaocrypt\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\node_dtls.cc">
+      <Filter>..</Filter>
+    </ClCompile>
+    <None Include="..\binding.gyp">
+      <Filter>..</Filter>
+    </None>
+    <ClCompile Include="..\deps\cyassl\src\internal.c">
+      <Filter>..\deps\cyassl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\src\tls.c">
+      <Filter>..\deps\cyassl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\src\keys.c">
+      <Filter>..\deps\cyassl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\src\crl.c">
+      <Filter>..\deps\cyassl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\src\ocsp.c">
+      <Filter>..\deps\cyassl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\src\ssl.c">
+      <Filter>..\deps\cyassl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\src\io.c">
+      <Filter>..\deps\cyassl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\ripemd.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\sha512.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\blake2b.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\md5.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\md4.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\hmac.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\random.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\camellia.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\des3.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\integer.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\logging.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\wc_port.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\rabbit.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\dsa.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\sha.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\sha256.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\coding.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\memory.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\pwdbased.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\aes.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\ecc.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\error.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\hc128.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\asn.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\arc4.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\dh.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\cyassl\ctaocrypt\src\rsa.c">
+      <Filter>..\deps\cyassl\ctaocrypt\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

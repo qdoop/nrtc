@@ -1,0 +1,26 @@
+{
+  "name": "nrtc",
+  "main": "index.js",
+  "version": "0.0.14110855",
+  "authors": [
+    "qdoop <qdoop@outlook.com>"
+  ],
+  "description": "Thin WEBRTC endpoint for NODE (Experimental)",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

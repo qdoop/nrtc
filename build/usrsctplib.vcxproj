@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{05F059F6-F5E0-FFF9-F70C-870B9D50A871}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>usrsctplib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\..\bin\;$(MSBuildProjectDirectory)\..\bin\</ExecutablePath>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <IntDir>$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.node</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.node</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.node</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.node</TargetExt>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\$(ProjectName).node</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Users\Administrator\.node-gyp\0.10.24\src;G:\Users\Administrator\.node-gyp\0.10.24\deps\uv\include;G:\Users\Administrator\.node-gyp\0.10.24\deps\v8\include;..\deps\usrsctplib;..\deps\usrsctplib\netinet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;SCTP_PROCESS_LEVEL_LOCKS;SCTP_SIMPLE_ALLOCATOR;__Userspace__;SCTP_DEBUG;LINUX_DEFINE;__Userspace_os_Windows;BUILDING_NODE_EXTENSION;DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;G:\Users\Administrator\.node-gyp\0.10.24\$(Configuration)\node.lib;wsock32.lib</AdditionalDependencies>
+      <AllowIsolation>true</AllowIsolation>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)$(ProjectName).node</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetExt>.node</TargetExt>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>G:\Users\Administrator\.node-gyp\0.10.24\src;G:\Users\Administrator\.node-gyp\0.10.24\deps\uv\include;G:\Users\Administrator\.node-gyp\0.10.24\deps\v8\include;..\deps\usrsctplib;..\deps\usrsctplib\netinet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;SCTP_PROCESS_LEVEL_LOCKS;SCTP_SIMPLE_ALLOCATOR;__Userspace__;SCTP_DEBUG;LINUX_DEFINE;__Userspace_os_Windows;BUILDING_NODE_EXTENSION;DEBUG;_DEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Users\Administrator\.node-gyp\0.10.24\src;G:\Users\Administrator\.node-gyp\0.10.24\deps\uv\include;G:\Users\Administrator\.node-gyp\0.10.24\deps\v8\include;..\deps\usrsctplib;..\deps\usrsctplib\netinet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;SCTP_PROCESS_LEVEL_LOCKS;SCTP_SIMPLE_ALLOCATOR;__Userspace__;SCTP_DEBUG;LINUX_DEFINE;__Userspace_os_Windows;BUILDING_NODE_EXTENSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;G:\Users\Administrator\.node-gyp\0.10.24\$(Configuration)\node.lib;wsock32.lib</AdditionalDependencies>
+      <AllowIsolation>true</AllowIsolation>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(ProjectName).node</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetExt>.node</TargetExt>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>G:\Users\Administrator\.node-gyp\0.10.24\src;G:\Users\Administrator\.node-gyp\0.10.24\deps\uv\include;G:\Users\Administrator\.node-gyp\0.10.24\deps\v8\include;..\deps\usrsctplib;..\deps\usrsctplib\netinet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;BUILDING_V8_SHARED=1;BUILDING_UV_SHARED=1;SCTP_PROCESS_LEVEL_LOCKS;SCTP_SIMPLE_ALLOCATOR;__Userspace__;SCTP_DEBUG;LINUX_DEFINE;__Userspace_os_Windows;BUILDING_NODE_EXTENSION;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\binding.gyp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\deps\usrsctplib\usrsctp.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_queue.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_ip_icmp.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_atomic.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_socketvar.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_route.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_environment.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_inpcb.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_ip6_var.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_uma.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_recv_thread.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_malloc.h"/>
+    <ClInclude Include="..\deps\usrsctplib\user_mbuf.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_sha1.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_auth.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_os.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_header.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_constants.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_crc32.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctputil.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_os_userspace.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_output.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_timer.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_input.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_pcb.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_indata.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_uio.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_process_lock.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_peeloff.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_structs.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_lock_userspace.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_bsd_addr.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_sysctl.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_asconf.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_var.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet\sctp_callout.h"/>
+    <ClInclude Include="..\deps\usrsctplib\netinet6\sctp6_var.h"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\node_sctp.cc"/>
+    <ClCompile Include="..\deps\usrsctplib\user_socket.c"/>
+    <ClCompile Include="..\deps\usrsctplib\user_environment.c"/>
+    <ClCompile Include="..\deps\usrsctplib\user_mbuf.c"/>
+    <ClCompile Include="..\deps\usrsctplib\user_recv_thread.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_auth.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_sha1.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_indata.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_sysctl.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_cc_functions.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_usrreq.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_pcb.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_timer.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_output.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_input.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_userspace.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_ss_functions.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_bsd_addr.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_peeloff.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_asconf.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_crc32.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctp_callout.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet\sctputil.c"/>
+    <ClCompile Include="..\deps\usrsctplib\netinet6\sctp6_usrreq.c"/>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>

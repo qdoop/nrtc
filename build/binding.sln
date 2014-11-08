@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cyassldtls", "cyassldtls.vcxproj", "{C3EF46DD-2E4B-E3F9-573B-BE2E76316272}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "usrsctplib", "usrsctplib.vcxproj", "{05F059F6-F5E0-FFF9-F70C-870B9D50A871}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05F059F6-F5E0-FFF9-F70C-870B9D50A871}.Debug|Win32.ActiveCfg = Debug|Win32
+		{05F059F6-F5E0-FFF9-F70C-870B9D50A871}.Debug|Win32.Build.0 = Debug|Win32
+		{05F059F6-F5E0-FFF9-F70C-870B9D50A871}.Release|Win32.ActiveCfg = Release|Win32
+		{05F059F6-F5E0-FFF9-F70C-870B9D50A871}.Release|Win32.Build.0 = Release|Win32
+		{C3EF46DD-2E4B-E3F9-573B-BE2E76316272}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C3EF46DD-2E4B-E3F9-573B-BE2E76316272}.Debug|Win32.Build.0 = Debug|Win32
+		{C3EF46DD-2E4B-E3F9-573B-BE2E76316272}.Release|Win32.ActiveCfg = Release|Win32
+		{C3EF46DD-2E4B-E3F9-573B-BE2E76316272}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

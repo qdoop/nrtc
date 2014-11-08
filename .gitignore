@@ -1,3 +1,15 @@
+
+bower_components
+node_modules
+v8.log
+npm-debug.log
+
+build
+openssl
+
+out
+
+
 # Logs
 logs
 *.log

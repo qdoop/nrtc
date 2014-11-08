@@ -1,13 +1,10 @@
-nrtc
+nrtc - Thin WEBRTC endpoint for NODE 
 ====
 
-== Thin WEBRTC endpoint for NODE (Experimental)
 
-== 
+If everything runs ok you should see something like that, an INIT SCTP packet decoded, send to you from the browser's side WEBRTC endpoint. (Chrome Version 38.0.2125.111 m)
 
-If everything runs ok you should see something like that, an INIT SCTP packet decoded and send to you from the browser side WEBRTC endpoint. (Chrome Version 38.0.2125.111 m)
-
-    CyaSSL Leaving ReceiveData(), return 100
+    ...
     CyaSSL Leaving CyaSSL_read_internal(), return 10
     peerData0 100
     13881388
@@ -20,7 +17,7 @@ If everything runs ok you should see something like that, an INIT SCTP packet de
     80030006
     80c10000
     CyaSSL Entering CyaSSL_read()
-    ....
+    ...
     
 ==
     

@@ -1,6 +1,7 @@
 
 _sctp= require('./build/Release/usrsctplib')
 
+sctp={}
 raw="""
 13881388
 00000000
@@ -29,7 +30,7 @@ f15a0000
 80c10000
 """
 raw=(raw.split('\n')).join('')
-log0  raw
+# log0  raw
 
 # _sctp.methodSCTP0(new Buffer(raw,'hex'))
 
@@ -38,9 +39,14 @@ log0  raw
 # sctp.methodSCTP0(new Buffer(raw,'hex'))
 
 
+wireSarkHelper=()->
+	#port 9899 is IANA port for SCTP over UDP tunneling. USE to analyse SCTP packets for free with WireSark
+	#you may need to bypass loopback interface or send it out to the wild
+	m=new Buffer(raw,'hex')
+	endp0.send  m, 0, m.length, 9899 , '192.168.1.5', ()->
+		log0 'wireSark helper'
 
-
-
+# setTimeout(wireSarkHelper, 2000)
 
 
 module.exports={}

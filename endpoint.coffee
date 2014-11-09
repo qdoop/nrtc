@@ -1,6 +1,9 @@
 
 dgram = require('dgram')
 
+endp = dgram.createSocket('udp4');
+global.endp0=endp
+
 stun=require('./node_stun.coffee')
 dtls=require('./node_dtls.coffee')
 sctp=require('./node_sctp.coffee')
@@ -14,9 +17,6 @@ sctp=require('./node_sctp.coffee')
 	#             |       B < 2   -+--> forward to STUN
 	#             +----------------+
 
-
-endp = dgram.createSocket('udp4');
-
 endp.on 'error', (err)->
 	console.log("server error:\n" + err.stack)
 	endp.close()
@@ -25,6 +25,7 @@ endp.on 'error', (err)->
 endp.on 'listening', ()->
 	address = endp.address()
 	console.log("server listening " + address.address + ":" + address.port)
+
 
 
 global.dump0=(b,w)->

@@ -1,6 +1,6 @@
 {
   "name": "nrtc",
-  "version": "0.0.14110877",
+  "version": "0.0.14110955",
   "description": "Thin WEBRTC endpoint for NODE (Experimental)",
   "main": "index.js",
   "scripts": {

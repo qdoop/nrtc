@@ -9,7 +9,8 @@ Run the following to install depedencies, build files, and run the program. Fina
     
     node index.js
 ```
-1. MAKE SURE you also fix your IP address inside `peer.coffee`, `endpoint.coffee`  from `192.168.1.5` to something similar
+Make sure that you:
+1. Fix your IP address inside `peer.coffee`, `endpoint.coffee`  from `192.168.1.5` to something similar
 2. Check that you firewall allows access to UDP port `50001`
 3. Fix `stun` password in node_stun.coffee
 3. `Always rebuild if you make a change`
